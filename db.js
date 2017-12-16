@@ -1,2 +1,4 @@
 var mongoose = require('mongoose');
-mongoose.connect(process.env.DB_URL, { useMongoClient: true });
+mongoose.connect('mongodb://localhost:27017/usermanager', { useMongoClient: true });
+
+// process.env.DB_URL
